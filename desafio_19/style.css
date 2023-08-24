@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #cfdef3;
+}
+
+.container {
+  position: relative;
+  width: 795px;
+  height: 489px;
+  left: 250px;
+  top: 158px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 24px 56px;
+  gap: 99px;
+  background: #fff;
+  border-radius: 40px;
+  align-items: center;
+}
+
+.container .icon {
+  border: 1px solid #e5d8ea;
+  display: flex;
+
+  width: 167px;
+  height: 17px;
+
+  border-radius: 999px;
+  background: #e5d8ea;
+}
+
+.caminho {
+  width: 683px;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+}
+
+.caminho .local {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  color: #372d3b;
+}
+
+.caminho .detail {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.motorista {
+  display: flex;
+  flex-direction: row;
+  gap: 105px;
+  width: 683px;
+  align-items: center;
+  height: 170px;
+  justify-content: space-between;
+}
+
+.motorista .perfil .img .car {
+  left: 13.47%;
+  right: 44.66%;
+  top: 17.62%;
+  bottom: 16.96%;
+}
+
+.perfil .img .photo{
+  width: 137px;
+  height: 141.37px;
+  
+}
