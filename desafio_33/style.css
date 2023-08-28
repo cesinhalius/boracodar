@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+    background: url('Assets/img-hero.png') no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
