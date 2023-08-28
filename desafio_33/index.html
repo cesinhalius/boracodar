@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio #33 - boracodar - Gerador de ticket</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Gere o seu ticket e compartlhe com o mundo</h1>
+
+        <label for="username">Digite o seu usuario do Github</label>
+
+        <div class="input">
+          <img src="./Assets/logo-github.svg" alt="image-input" />
+  
+          <input type="text" id="username"
+            placeholder="Nome de usuario"
+            autocapitalize="off"
+            autocomplete="off"
+          />
+  
+          <span>Usuário inválido. Verifique e tente novamente.</span>
+  
+  
+          <button>Gere o seu ticket</button>
+      </div>
+
+     
+      </div>
+
+
+      <div class="ticket">
+        <div class="ticket-container">
+            <img src="./Assets/img-hero.png" alt="">
+
+            <div class="info">
+                <div class="user-ticket-info">
+                    <img src="./Assets/img-avatar.png" alt="" id="photo">
+
+                    <span>Tribulante</span>
+
+                    <h1 id="name">Seu nome aqui</h1>
+                </div>
+            </div>
+
+            <div class="event-ticket-info">
+                <span>Evento</span>
+                <span>IA para devs</span>
+            </div>
+            <div class="event-ticket-info">
+                <span>Data</span>
+                <span>14 - 16 ago, 2023</span>
+            </div>
+            <div class="event-ticket-info">
+                <span>Hora</span>
+                <span>ao vivo - 19h</span>
+            </div>
+
+
+            <img src="Assets/lines-svg.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
