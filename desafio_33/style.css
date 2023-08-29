@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
+:root{
+    --font-principal:'Space Grotesk', sans-serif;
+    --font-secondary:'Roboto',sans-serif;
+    --gray-light:#F3F4FE;
+    --gray-dark:#202024;
+    --danger:#FF8F8F;
+    --purple-normal:#8860E6;
+    --purple-dark:#3c1053;
+    --white:#FFF;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,11 +18,191 @@
 
 
 body{
-    width: 100%;
-    height: 100vh;
-    font-family: 'Space Grotesk', sans-serif;
     background: url('Assets/img-hero.png') no-repeat;
     background-size: cover;
+    font-family: var(--font-principal);
+    height: 100vh;
     justify-content: center;
+    width: 100%;
 }
 
+.container{
+    align-items: center;
+    display:flex;
+    gap: 32px;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 366px;
+    width: 490px;
+}
+
+.content h1{
+    background: var(--linear, linear-gradient(90deg,#DEE0FC 0%, #996DFF 51.04%, #BC9FFF 100%));
+    background-clip: text;
+    font-family: var(--font-principal);
+    font: normal 20px 400;
+    max-width: 350px;    
+    line-height: 160%;
+    text-transform: uppercase;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.content label{
+    color: var(--gray-light);   
+    font-family:var(--font-principal);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: uppercase;
+}
+
+.input{
+    display: flex;
+   align-items: center;
+   background: var(--gray-light);
+   border-radius: 1rem;
+   gap: 10px;
+   padding: 16px 12px;  
+}
+
+input,input::placeholder{
+    border: none;
+    color: var(--gray-dark);
+    outline: none;
+    width: 100%;
+    font-family:var(--font-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    background: var(--gray-light);
+}
+
+#error{
+    color: var(--danger);
+
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+
+    display: none;
+}
+
+button{
+    align-items: center;
+    align-self: stretch;
+    background: var(--purple-normal);
+    border: none;
+    border-radius: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 700;
+    gap: 10px;
+    justify-content: center;
+    line-height: normal;
+    margin-top: .5rem;
+    padding: 22px 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background:var(--purple-dark);
+    transition: ease-in-out .4s;
+}
+
+.ticket{
+    background: url('Assets/bg-card-ticket.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 408.64px;
+    width: 694px;
+}
+
+.ticket-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background: var(--gray-light);
+    color: var(--gray-dark);
+}
+
+.user-ticket-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 36px;
+}
+
+.user-ticket-info span{
+    color: var(--purple-normal);
+    text-align: center;
+    font-family: var(--font-principal);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: 1.26px;
+    text-transform: uppercase;
+}
+
+.user-ticket-info h1{
+    color: var(--gray-dark);
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+
+.user-ticket-info img{
+    width: 127px;
+    height: 128px;
+    border-radius: 63.5px;
+}
+
+.event-ticket-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-ticket-info span{
+    font-family: var(--font-principal);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.05px;
+    text-transform: uppercase;
+}
+.event-ticket-info span:nth-child(2){
+    font-family: var(--font-principal);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.05px;
+    text-transform: uppercase;
+    color: var(--gray-dark);
+}
