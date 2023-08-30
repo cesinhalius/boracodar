@@ -8,6 +8,7 @@
     --purple-normal:#8860E6;
     --purple-dark:#3c1053;
     --white:#FFF;
+    --success:#00FF00;
 }
 
 *{
@@ -91,6 +92,17 @@ input,input::placeholder{
 #error{
     color: var(--danger);
 
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+
+    display: none;
+}
+
+#success{
+    color: var(--success);
+    
     font-family: var(--font-secondary);
     font-size: 18px;
     font-weight: 400;
